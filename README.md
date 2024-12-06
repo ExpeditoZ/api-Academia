@@ -8,119 +8,16 @@ Esta API de Gerenciamento de Academia organiza clientes, treinos e planos de ass
 - **Postman** (para testar as rotas)  
 
 ---
-Endpoints da API
-Clientes
-Cadastrar Cliente
 
-Método: POST
-URL: /clientes
-Corpo (exemplo):
-json
-Copiar código
-{
-    "nome": "João Silva",
-    "idade": 28,
-    "endereco": "Rua Exemplo, 123",
-    "telefone": 88988278850,
-    "plano": "Mensal"
-}
-Listar Clientes
+### Como Executar  
+1. Tenha o **Python** instalado em sua máquina.  
+2. Instale as dependências necessárias com o comando:  
+   ```bash
+   pip install requirements.txt
+3. Executar o servidor:
+   ```bash
+   uvicorn main:app --reload
+4. Abra o servidor usando a URL: http://127.0.0.1:8000.
 
-Método: GET
-URL: /clientes
-Obter Cliente pelo ID
-
-Método: GET
-URL: /clientes/{cliente_id}
-Atualizar Cliente
-
-Método: PUT
-URL: /clientes/{cliente_id}
-Corpo (exemplo):
-json
-Copiar código
-{
-    "nome": "João Silva Atualizado",
-    "idade": 29,
-    "endereco": "Rua Atualizada, 456",
-    "telefone": 88988278851,
-    "plano": "Anual"
-}
-Remover Cliente
-
-Método: DELETE
-URL: /clientes/{cliente_id}
-Treinos
-Cadastrar Treino
-
-Método: POST
-URL: /treinos
-Corpo (exemplo):
-json
-Copiar código
-{
-    "cliente_id": 1,
-    "descricao": "Treino A - Peito e Tríceps",
-    "duracao": "1 hora",
-    "frequencia_semana": 3
-}
-Listar Treinos
-
-Método: GET
-URL: /treinos
-Obter Treino pelo ID
-
-Método: GET
-URL: /treinos/{treino_id}
-Atualizar Treino
-
-Método: PUT
-URL: /treinos/{treino_id}
-Corpo (exemplo):
-json
-Copiar código
-{
-    "cliente_id": 1,
-    "descricao": "Treino A Atualizado",
-    "duracao": "1 hora",
-    "frequencia_semana": 4
-}
-Remover Treino
-
-Método: DELETE
-URL: /treinos/{treino_id}
-Planos
-Cadastrar Plano
-
-Método: POST
-URL: /planos
-Corpo (exemplo):
-json
-Copiar código
-{
-    "nome": "Mensal",
-    "preco": 100.0
-}
-Listar Planos
-
-Método: GET
-URL: /planos
-Obter Plano pelo ID
-
-Método: GET
-URL: /planos/{plano_id}
-Atualizar Plano
-
-Método: PUT
-URL: /planos/{plano_id}
-Corpo (exemplo):
-json
-Copiar código
-{
-    "nome": "Mensal Atualizado",
-    "preco": 110.0
-}
-Remover Plano
-
-Método: DELETE
-URL: /planos/{plano_id}
+### Complementações
+Este projeto é uma aplicação prática para aprender e implementar conceitos básicos de desenvolvimento de APIs utilizando FastAPI.
