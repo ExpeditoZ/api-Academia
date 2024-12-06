@@ -18,6 +18,7 @@ Esta API de Gerenciamento de Academia organiza clientes, treinos e planos de ass
    ```bash
    uvicorn main:app --reload
 4. Abra o servidor usando a URL: http://127.0.0.1:8000.
-
+5. Na URL: http://127.0.0.1:8000/docs, será possível acessar o Swagger, onde está disponível as partes da API para gerenciar clientes, treinos e planos da academia.
+   
 ### Complementações
 Este projeto é uma aplicação prática para aprender e implementar conceitos básicos de desenvolvimento de APIs utilizando FastAPI.
